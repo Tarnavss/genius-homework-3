@@ -1,0 +1,254 @@
+@font-face {
+  font-display: swap;
+
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2');
+  }
+
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v30-cyrillic_latin-500.woff2') format('woff2');
+}
+
+
+:root {
+  --color-white: #FFFFFF;
+  --color-blue: #2B7FFF;
+  --color-dark: #011C44;
+  --color-secondary-dark: #4A4A4A;
+  --color-secondary-light: #747272;
+  --color-secondary-blue: #011F4A;
+}
+
+body {
+    color: var(--color-dark);
+    font-family: roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;             /*  задать ширину, поставить контейнер посередине */
+  margin: 0 auto;
+}
+
+ul{
+  list-style-type: none;      /*  убирает точки в списках */
+}
+
+.section {
+  padding: 48px 0;        /* расстояние верх.низ между секциями */
+}
+
+
+/* header */
+/* link */
+
+.link {
+   text-decoration: none;        /* убрать подчеркивание списка */
+}
+
+.link:hover {
+    color: var(--color-blue);
+    font-weight: 700;
+}
+
+.header-conteiner {
+  display: flex;
+  align-items: center;
+}
+
+
+/* hero */
+.hero-section {
+  padding: 120px 0 78px 106px;
+}
+
+.title-hero {
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  margin-bottom: 40px;
+  color: var(--color-blue);
+      font-family: play, sans-serif;
+      font-size: 140px;
+      font-weight: 700;
+      line-height: 114px;
+}
+
+/* button */
+.button {
+    color: var(--color-white);
+    background-color: var(--color-blue);
+     border-color: var(--color-blue);
+    width: 219px;
+    height: 53px;
+    border-radius: 32px;
+    cursor: pointer;
+     font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.button:hover {
+    color: var(--color-dark);
+    background-color: transparent;
+}
+
+/* title section */
+.format-title {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 700;
+      line-height: 74px;
+}
+
+ .title-color {
+    color: var(--color-blue);
+ }
+
+ .title-text {
+      font-size: 22px;
+      line-height: 38px;
+ }
+
+ .text-title {
+  font-weight: 600;
+
+ }
+
+ /* center */
+ .center-text {
+  margin-bottom: 40px;
+ }
+
+ .center-title {
+  margin-bottom: 40px;
+ }
+
+ /* reasons section */
+ /* .reasons {
+  text-align: center;
+ } */
+
+.reasons-title {
+  margin-bottom: 48px;
+}
+
+
+ /* procedures */
+ .procedures  {
+  font-size: 22px;
+  line-height: 26px;
+  /* color: var(--color-white); */
+ }
+
+ .procedures-title {
+  margin-bottom: 48px;
+ }
+
+
+ /* find us */
+.findus-title {
+  margin-bottom: 48px;
+}
+
+ .findus {
+  margin-bottom: 32px;
+  font-size: 22px;
+  font-weight: 600;
+      line-height: 25px;
+ }
+
+ .findus-text {
+  color: var(--color-blue);
+ }
+
+ /* button 2*/
+.button2 {
+  margin-bottom: 8px;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+border-color: var(--color-blue);
+  width: 286px;
+  height: 53px;
+  border-radius: 32px;
+  cursor: pointer;
+   font-weight: 600;
+font-size: 18px;
+}
+
+.button:hover {
+  color: var(--color-dark);
+  background-color: transparent;
+}
+
+
+/* footer */
+address {
+ font-style: normal;      /*  убрать италик с адресной ссылки */
+}
+
+.foot-link {
+  font-size: 16px;
+      line-height: 18px;
+  /* color: var(--color-white); */
+
+}
+
+.foot-link:hover {
+  color: var(--color-blue);
+  font-weight: 700;
+}
+
+.adres-link {
+  font-size: 16px;
+  line-height: 18px;
+ /* color: var(--color-white); */
+      text-decoration: none;
+   }
+
+.adres-link:hover {
+  color: var(--color-blue);
+  font-weight: 700;
+}
+
+   .dani {
+      font-size: 16px;
+      color: var(--color-secondary-light);
+      
+   }
