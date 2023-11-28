@@ -75,7 +75,19 @@
                             З нами краса назавжди!</p>
 
                     </div>
-                    <img src="./images/изображ..png" alt="">
+                    <div class="center-img">
+                        <svg class="star-one" width="64" height="64">
+                            <use href="./images/symbol-defs.svg#icon-Star"></use>
+                        </svg>
+                        <svg class="star-two" width="40" height="40">
+                            <use href="./images/symbol-defs.svg#icon-Star"></use>
+                        </svg>
+                        <svg class="star-three" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-Star"></use>
+                        </svg>
+                        <img src="./images/изображ..png" alt="">
+                    </div>
+
                 </div>
             </div>
 
@@ -124,7 +136,7 @@
                     <div class="procedures-container">
                         <button class="carousel-button">
                             <svg class="carousel-arrow" width="16" height="16">
-                                <use href="./images/symbol-defs.svg#icon-Arrow-left"></use>
+                                <use href="./images/symbol-defs.svg#icon-Arrow"></use>
                             </svg>
                         </button>
 
@@ -142,7 +154,7 @@
 
                         <button class="carousel-button next">
                             <svg class="carousel-arrow" width="16" height="16">
-                                <use href="./images/symbol-defs.svg#icon-Arrow-left"></use>
+                                <use href="./images/symbol-defs.svg#icon-Arrow"></use>
                             </svg>
                         </button>
                     </div>
@@ -161,12 +173,27 @@
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                     <div class="findus-content">
-                        <h3 class="findus">Запишіться <span class="findus-text">безкоштовно</span> <br>та отримайте
-                            подарунок
-                        </h3>
-                        <button class="button2" type="button">Записатись безкоштовно</button>
-                        <p class="format-title">Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
-                        </p>
+                        <p class="modal-text">Запишіться <span class="modal-text-blue">безкоштовно</span> та отримайте подарунок</p>
+                        
+                        <form name="modal-form" autocomplete="off" novalidate>
+                        
+                            <div class="form-field">
+                                <label class="form-lable" for="user-name">Ваше ім'я та прізвище</label>
+                                <input class="form-input" type="name" name="user-name" id="user-name">
+                            </div>
+                            <div class="form-field">
+                                <label class="form-lable" for="user-tel">Ваш номер телефону</label>
+                                <input class="form-input" type="tel" name="user-tel" id="user-tel">
+                            </div>
+                            <div class="form-field">
+                                <label class="form-lable" for="user-email">Ваша електронна пошта</label>
+                                <input class="form-input" type="email" name="user-email" id="user-email">
+                            </div>
+                        </form>
+                        
+                        <button class="form-button button" type="submit">Записатись безкоштовно</button>
+                        <p class="form-terms">Натискаючи на кнопку я погоджуюсь з <a class="terms-link" href="#">політикою
+                                конфіденційності</a></p>
                     </div>
                 </div>
             </div>
@@ -248,8 +275,33 @@
 
         <div class="backdrop is-hidden">
             <div class="modal">
+
                 <button class="modal-btn-close" type="button">close</button>
+
+                <h2 class="modal-title">Замовити дзвінок</h2>
+                <p class="modal-text">Запишіться <span class="modal-text-blue">безкоштовно</span> та отримайте подарунок</p>
+
+                <form name="modal-form" autocomplete="off" novalidate>
+
+                    <div class="form-field">
+                        <label class="form-lable" for="user-name">Ваше ім'я та прізвище</label>
+                        <input class="form-input" type="name" name="user-name" id="user-name">
+                    </div>
+                    <div class="form-field">
+                        <label class="form-lable" for="user-tel">Ваш номер телефону</label>
+                        <input class="form-input" type="tel" name="user-tel" id="user-tel">
+                    </div>
+                    <div class="form-field">
+                        <label class="form-lable" for="user-email">Ваша електронна пошта</label>
+                        <input class="form-input" type="email" name="user-email" id="user-email">
+                    </div>
+                </form>
+
+                <button class="form-button button" type="submit">Записатись безкоштовно</button>
+                <p class="form-terms">Натискаючи на кнопку я погоджуюсь з <a class="terms-link" href="#">політикою
+                        конфіденційності</a></p>
             </div>
+
         </div>
 
         <script src="./js/modal.js"></script>

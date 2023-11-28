@@ -229,6 +229,39 @@ h2 {
   margin-bottom: 40px;
  }
 
+
+ /* stars */
+ .center-img {
+  position: relative;
+ }
+
+
+ .star-one {
+  fill: var(--color-dark);
+  position: absolute;
+  top: 364px;
+  left: 121px;
+  transform: rotate(30deg);
+  flex-shrink: 0;
+ }
+
+ .star-two {
+  fill: var(--color-blue);
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    flex-shrink: 0;
+ }
+
+ .star-three {
+  fill: #747272;
+  position: absolute;
+  top: 270px;
+  right: 68px;
+  transform: rotate(23deg);
+  flex-shrink: 0;
+}
+
  /* reasons section */
 
  .reasons-box {
@@ -279,6 +312,7 @@ box-shadow: 0 4px 4px 0px #A8C6F5;
  .procedures-card {
     width: 344px;
     height: 456px;
+    padding: 24px;
 text-align: center;        
 border: 1px solid lightgray; /* убрать */
 transition: transform 0.3s;
@@ -354,22 +388,11 @@ transition: transform 0.3s;
   width: 422px;
     height: 482px;
     flex-shrink: 0;
-    padding: 48px 74px;
+    padding: 48px 56px;
     border-radius: 32px;
       background: var(--color-dark);
 }
 
- .findus {
-  margin-bottom: 32px;
-  font-style: normal;
-    font-weight: 600;
-      line-height: 25px;
-      color: var(--color-white);
- }
-
- .findus-text {
-  color: var(--color-blue);
- }
 
  /* button 2*/
 .button2 {
@@ -429,12 +452,12 @@ address {
       line-height: 18px;
   color: var(--color-white);
   margin-bottom: 16px;
+        transition: color 0.3s;
 }
 
 .foot-link:hover {
   color: var(--color-blue);
-  font-weight: 700;
-}
+ }
 
 .footer-icons {
   display: flex;
@@ -443,6 +466,7 @@ address {
 
 .address-icon {
   fill: var(--color-white);        /*отображение и цвет иконки свг */
+
 }
 
 .address-icon:hover {        
@@ -454,11 +478,11 @@ address {
   line-height: 18px;
   color: var(--color-white);
   text-decoration: none;
+        transition: color 0.3s;
    }
 
 .adres-link:hover {
   color: var(--color-blue);
-  font-weight: 700;
 }
 
 
@@ -497,14 +521,87 @@ address {
 
 .modal {
   position: relative;           /* позиция для кнопки */
+  padding: 42px 144px;
   width: 723px;
-  height: 681px;
+  height: 694px;
   background-color: var(--color-dark);
   border-radius: 48px;
+  overflow-y: auto;
 }
 
 .modal-btn-close {
   position: absolute;           /* абсолют можно двигать только в рилейтиве */
   top: 40px;
   right: 40px;
+}
+
+ .modal-title {
+   margin: 0 auto 40px;
+   text-align: center;
+   font-family: play;
+    color: var(--color-white);
+ }
+
+ .modal-text {
+    margin: 0 auto;
+      text-align: center;
+      width: 274px;
+      padding-bottom: 32px;
+      font-size: 22px;
+   color: var(--color-white);
+ }
+
+.modal-text-blue {
+  color: var(--color-blue);
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto 8px;
+  width: 281px;
+}
+
+.form-terms {
+  margin: 0 auto;
+  max-width: 220px;  
+  font-weight: 500px;
+  color: var(--color-secondary-light);
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.terms-link {
+  color: var(--color-secondary-light);
+  text-underline-offset: 2px;
+}
+
+/* modal form */
+
+.form-field {
+  position: relative;
+  margin: 0 auto 24px;
+  width: 310px;
+}
+
+.form-lable {
+  position: absolute;
+  top: 18px;
+  left: 24px;
+  font-size: 13px;
+  color: var(--color-white);
+  transition: transform 0.3s;
+}
+
+.form-field:focus-within .form-lable {
+  transform: translate(-36px, -40px);
+}
+
+.form-input {
+  width: 100%;
+  border: 2px solid var(--color-secondary-light);
+  border-radius: 32px;
+  background-color: transparent;
+  padding: 16px 32px;
+  color: var(--color-white);
 }
