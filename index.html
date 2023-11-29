@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -130,35 +130,41 @@
 
         <section class="section">
             <div class="container">
-                <div class="procedures-text">
-                    <h2 class="procedures-title">Наші <span class="title-color">процедури</span></h2>
+                <h2 class="procedures-title">Наші <span class="title-color">процедури</span></h2>
 
-                    <div class="procedures-container">
-                        <button class="carousel-button">
-                            <svg class="carousel-arrow" width="16" height="16">
-                                <use href="./images/symbol-defs.svg#icon-Arrow"></use>
-                            </svg>
-                        </button>
+                <div class="procedures-container">
+                    <button class="carousel-button">
+                        <svg class="carousel-arrow" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-Arrow"></use>
+                        </svg>
+                    </button>
 
-                        <ul class="procedures">
-                            <li class="procedures-item">
-                                <article class="procedures-card">Маски для обличчя</article>
-                            </li>
-                            <li class="procedures-item">
-                                <article class="procedures-card">Ін'єкції для обличчя</article>
-                            </li>
-                            <li class="procedures-item">
-                                <article class="procedures-card">Очищення обличчя</article>
-                            </li>
-                        </ul>
+                    <ul class="procedures">
+                        <li class="procedures-item">
+                            <article class="procedures-card">
+                                <img class="procedures-image" src="./images/masks.jpg" alt="">
+                                <h3 class="card-title">Маски для обличчя</h3>
+                            </article>
+                        </li>
+                        <li class="procedures-item">
+                            <article class="procedures-card">
+                                <img class="procedures-image" src="./images/injections.jpg" alt="">
+                                <h3 class="card-title">Ін'єкції для обличчя</h3>
+                            </article>
+                        </li>
+                        <li class="procedures-item">
+                            <article class="procedures-card">
+                                <img class="procedures-image" src="./images/clean.jpg" alt="">
+                                <h3 class="card-title">Очищення обличчя</h3>
+                            </article>
+                        </li>
+                    </ul>
 
-                        <button class="carousel-button next">
-                            <svg class="carousel-arrow" width="16" height="16">
-                                <use href="./images/symbol-defs.svg#icon-Arrow"></use>
-                            </svg>
-                        </button>
-                    </div>
-
+                    <button class="carousel-button next">
+                        <svg class="carousel-arrow" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-Arrow"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>
@@ -173,10 +179,11 @@
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                     <div class="findus-content">
-                        <p class="modal-text">Запишіться <span class="modal-text-blue">безкоштовно</span> та отримайте подарунок</p>
-                        
+                        <p class="modal-text">Запишіться <span class="modal-text-blue">безкоштовно</span> та отримайте
+                            подарунок</p>
+
                         <form name="modal-form" autocomplete="off" novalidate>
-                        
+
                             <div class="form-field">
                                 <label class="form-lable" for="user-name">Ваше ім'я та прізвище</label>
                                 <input class="form-input" type="name" name="user-name" id="user-name">
@@ -187,12 +194,14 @@
                             </div>
                             <div class="form-field">
                                 <label class="form-lable" for="user-email">Ваша електронна пошта</label>
-                                <input class="form-input" type="email" name="user-email" id="user-email">
+                                <input class="form-input" type="email" name="user-email" id="user-email"
+                                    pattern="^\[0-9]{12}">
                             </div>
                         </form>
-                        
+
                         <button class="form-button button" type="submit">Записатись безкоштовно</button>
-                        <p class="form-terms">Натискаючи на кнопку я погоджуюсь з <a class="terms-link" href="#">політикою
+                        <p class="form-terms">Натискаючи на кнопку я погоджуюсь з <a class="terms-link"
+                                href="#">політикою
                                 конфіденційності</a></p>
                     </div>
                 </div>
@@ -279,7 +288,8 @@
                 <button class="modal-btn-close" type="button">close</button>
 
                 <h2 class="modal-title">Замовити дзвінок</h2>
-                <p class="modal-text">Запишіться <span class="modal-text-blue">безкоштовно</span> та отримайте подарунок</p>
+                <p class="modal-text">Запишіться <span class="modal-text-blue">безкоштовно</span> та отримайте подарунок
+                </p>
 
                 <form name="modal-form" autocomplete="off" novalidate>
 
